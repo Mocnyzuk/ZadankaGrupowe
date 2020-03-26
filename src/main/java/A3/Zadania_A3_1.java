@@ -36,12 +36,12 @@ public class Zadania_A3_1 {
 
     //Warmup-2 > stringTimes
     public static String stringTimes(String str, int n) {
-        String r = "";
+        StringBuilder r = new StringBuilder();
         for(int i=0;i<n;i++)
         {
-            r = r+str;
+            r.append(str);
         }
-        return r;
+        return r.toString();
     }
 
     //Warmup-2 > doubleX
@@ -64,6 +64,51 @@ public class Zadania_A3_1 {
         return a.substring(1)+b.substring(1);
     }
 
+    //String-1 > middleThree
+    public static String middleThree(String str) {
+        int half = str.length()/2;
+        return str.substring(half-1,half+2);
+    }
+
+    //String-1 > lastChars
+    public static String lastChars(String a, String b) {
+        if (!a.isEmpty() && b.length() > 1) {
+            return a.substring(0, 1) + b.substring(b.length() - 1);
+        }
+        if (a.isEmpty() && b.length()>1)
+        {
+            return "@"+ b.substring(b.length() - 1);
+
+        }
+        if(!a.isEmpty())
+        {
+            return a.substring(0, 1)+"@";
+        }
+        else
+            return "@@";
+    }
+
+    //Array-1 > no23
+    public static boolean no23(int[] nums) {
+        if(nums[0] != 2 && nums[1] != 2 && nums[0] != 3 && nums[1] != 3)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    //Array-1 > fix23
+    public static int[] fix23(int[] nums) {
+        if(nums[0] == 2 && nums[1] == 3)
+        {
+            nums[1] = 0;
+        }
+        if(nums[1] == 2 && nums[2] == 3)
+        {
+            nums[2] = 0;
+        }
+return nums;
+    }
 
 
 }

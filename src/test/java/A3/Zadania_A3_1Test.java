@@ -90,5 +90,51 @@ class Zadania_A3_1Test {
         assertEquals("ellohere",Zadania_A3_1.nonStart(a,b));
     }
 
+    @Test
+    void middleThree()
+    {
+        //given
+        var str = "Candy";
+        //when
+        Zadania_A3_1.middleThree(str);
+        //then
+        assertEquals("and", Zadania_A3_1.middleThree(str));
+    }
+
+    @Test
+    void lastChars()
+    {
+        //given
+        var a = "last";
+        var b = "chars";
+        //when
+        Zadania_A3_1.lastChars(a,b);
+        //then
+        assertEquals("ls",Zadania_A3_1.lastChars(a,b));
+    }
+
+    @Test
+    void no23()
+    {
+        //given
+        int[] nums = {1,4};
+        //when
+        Zadania_A3_1.no23(nums);
+        //then
+        assertTrue(Zadania_A3_1.no23(nums));
+    }
+    @Test
+    void fix23()
+    {
+        //given
+        int[] nums = {1,2,3};
+        //when
+        Zadania_A3_1.fix23(nums);
+        //then
+        assertArrayEquals(new int[]{1, 2, 0}, Zadania_A3_1.fix23(nums));
+    }
+
+
+
 
 }
