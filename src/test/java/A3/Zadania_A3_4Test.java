@@ -15,4 +15,16 @@ class Zadania_A3_4Test {
         //then
         assertTrue(isStartHI);
     }
+
+    @Test
+    void hasTeen() {
+        //given
+        int a = 4;
+        int b = 10;
+        int c = 15;
+        //when
+        boolean isHasTeen = Zadania_A3_4.hasTeen(a,b,c);
+        //then
+        assertTrue(isHasTeen);
+    }
 }
