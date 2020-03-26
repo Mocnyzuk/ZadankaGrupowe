@@ -52,4 +52,16 @@ class Zadania_A3_3Test {
        //then
        assertEquals(expectedValue, returnedValue);
     }
+
+    @Test
+    void startWord() {
+        //given
+        String expectedValue = "hip";
+        String str="hippo";
+        String word = "xip";
+              //when
+        String returnedValue = Zadania_A3_3.startWord(str,word);
+        //then
+        assertEquals(expectedValue, returnedValue);
+    }
 }
