@@ -26,10 +26,12 @@ public class Zadania_A3_4 {
 
     //Warmup-1 > everyNth
     public static String everyNth(String text, int n){
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for(int i = 0; i < text.length(); i+=n){
-            result += text.charAt(i);
+            result.append(text.charAt(i));
         }
-        return result;
+        return result.toString();
     }
+
+
 }
