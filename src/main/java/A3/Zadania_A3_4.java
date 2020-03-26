@@ -80,5 +80,12 @@ public class Zadania_A3_4 {
         return result;
     }
 
+    //Logic-1 > cigarParty
+    public static boolean cigarParty(int cigars, boolean weekend){
+        if(weekend && cigars >= 40){
+            return true;
+        }else return !weekend && cigars >= 40 && cigars <= 60;
+    }
+
 
 }

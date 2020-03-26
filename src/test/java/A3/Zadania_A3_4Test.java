@@ -99,4 +99,14 @@ class Zadania_A3_4Test {
         //then
         assertEquals("ababab", result);
     }
+
+    @Test
+    void cigarParty() {
+        //given weekend true in method call
+        int cigars = 70;
+        //when
+        boolean result = Zadania_A3_4.cigarParty(cigars, true);
+        //then
+        assertTrue(result);
+    }
 }
