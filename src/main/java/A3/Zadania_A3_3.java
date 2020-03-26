@@ -52,23 +52,33 @@ public class Zadania_A3_3 {
     //String-1 > startWord
     public static String startWord(String str, String word) {
         if (word.length() > 1)
-            if(str.length() >= word.length() &&
+            if (str.length() >= word.length() &&
                     str.substring(1, word.length()).equals(word.substring(1)))
                 return str.substring(0, word.length());
         return "";
     }
+
     //Array-1 > reverse3
     public static int[] reverse3(int[] nums) {
         int[] reversed = {nums[2], nums[1], nums[0]};
         return reversed;
 
     }
+
     //Array-1 > middleWay
     public static int[] middleWay(int[] a, int[] b) {
-int[] middleWay = {a[1],b[1]};
-return middleWay;
+        int[] middleWay = {a[1], b[1]};
+        return middleWay;
     }
 
     //Array-1 > makeMiddle
+    public static int[] makeMiddle(int[] nums) {
+int[] middleArray = new int[2];
+int middlePosition = nums.length/2;
+        middleArray[0] = nums[middlePosition-1];
+        middleArray[1] = nums[middlePosition];
+        return middleArray;
+    }
+
     //Array-1 > midThree
 }
