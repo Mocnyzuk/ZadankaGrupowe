@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class Zadania_A3_3Test {
 
     @Test
-    void diff21() {
+    void testDiff21() {
         //given
         int expectedValue = 1;
         int number = 20;
@@ -18,12 +18,24 @@ class Zadania_A3_3Test {
     }
 
     @Test
-    void nearHundred() {
+    void testNearHundred() {
         //given
         boolean expectedValue = false;
         int number = 89;
         //when
         boolean returnedValue = Zadania_A3_3.nearHundred(number);
+        //then
+        assertEquals(expectedValue, returnedValue);
+    }
+
+
+    @Test
+    void last2() {
+        //given
+        int expectedValue = 2;
+        String text = "axxxaaxx";
+        //when
+        int returnedValue = Zadania_A3_3.last2(text);
         //then
         assertEquals(expectedValue, returnedValue);
     }
