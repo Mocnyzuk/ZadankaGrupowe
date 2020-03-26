@@ -33,5 +33,10 @@ public class Zadania_A3_4 {
         return result.toString();
     }
 
+    //String-1 > helloName
+    public static String helloName(String name){
+        return "Hello ".concat(name);
+    }
+
 
 }

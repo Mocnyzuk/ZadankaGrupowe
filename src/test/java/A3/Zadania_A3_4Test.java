@@ -48,4 +48,14 @@ class Zadania_A3_4Test {
         //then
         assertEquals("aceg", result);
     }
+
+    @Test
+    void helloName() {
+        //given
+        String name = "Patryk";
+        //when
+        String result = Zadania_A3_4.helloName(name);
+        //then
+        assertEquals("Hello Patryk", result);
+    }
 }
