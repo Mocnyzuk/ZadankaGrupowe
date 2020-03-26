@@ -48,5 +48,13 @@ public class ZadankaJJ {
 
     }
 
+    public static String stringX(String str){
+            char start = str.charAt(1);
+            char end = str.charAt(str.length()-1);
+            s = str.substring(1, str.length()-2);
+            while(str.contains("x")){
+                str.replace('x', );
+        };
+    }
 
 }
