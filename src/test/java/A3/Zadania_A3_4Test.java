@@ -69,4 +69,14 @@ class Zadania_A3_4Test {
         //then
         assertEquals("<<WooHoo>>", result);
     }
+
+    @Test
+    void theEnd() {
+        //given
+        String text = "Hello";
+        //when
+        String result = Zadania_A3_4.theEnd(text, false);
+        //then
+        assertEquals("o", result);
+    }
 }

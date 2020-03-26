@@ -45,7 +45,15 @@ public class Zadania_A3_4 {
                 .append(word)
                 .append(out.substring(out.length()/2, out.length()))
                 .toString();
-}
+    }
+
+    //String-1 > theEnd
+    public static String theEnd(String text, boolean first){
+        if(first){
+            return text.substring(0,1);
+        }
+        return text.substring(text.length()-1, text.length());
+    }
 
 
 }
