@@ -109,4 +109,14 @@ class Zadania_A3_4Test {
         //then
         assertTrue(result);
     }
+
+    @Test
+    void caughtSpeeding() {
+        //given birthday false in method call
+        int speed = 65;
+        //when
+        int result = Zadania_A3_4.caughtSpeeding(65,false);
+        //then
+        assertEquals(1, result);
+    }
 }
