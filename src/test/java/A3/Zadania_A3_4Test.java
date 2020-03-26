@@ -37,4 +37,15 @@ class Zadania_A3_4Test {
         //then
         assertTrue(result);
     }
+
+    @Test
+    void everyNth() {
+        //given
+        String text = "abcdefg";
+        int n = 2;
+        //when
+        String result = Zadania_A3_4.everyNth(text, n);
+        //then
+        assertEquals("aceg", result);
+    }
 }

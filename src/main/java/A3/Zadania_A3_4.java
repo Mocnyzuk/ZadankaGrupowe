@@ -23,4 +23,13 @@ public class Zadania_A3_4 {
         }
         return counter >= 1 && counter <= 3;
     }
+
+    //Warmup-1 > everyNth
+    public static String everyNth(String text, int n){
+        String result = "";
+        for(int i = 0; i < text.length(); i+=n){
+            result += text.charAt(i);
+        }
+        return result;
+    }
 }
