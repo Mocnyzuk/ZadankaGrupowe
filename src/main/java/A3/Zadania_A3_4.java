@@ -43,7 +43,7 @@ public class Zadania_A3_4 {
         StringBuilder result = new StringBuilder();
         return result.append(out.substring(0, out.length()/2))
                 .append(word)
-                .append(out.substring(out.length()/2, out.length()))
+                .append(out.substring(out.length()/2))
                 .toString();
     }
 
@@ -52,7 +52,17 @@ public class Zadania_A3_4 {
         if(first){
             return text.substring(0,1);
         }
-        return text.substring(text.length()-1, text.length());
+        return text.substring(text.length()-1);
+    }
+
+    //String-1 > seeColor
+    public static String seeColor(String text){
+        if("red".equals(text.substring(0,3).toLowerCase())){
+            return "red";
+        }else if("blue".equals(text.substring(0,4).toLowerCase())){
+            return "blue";
+        }
+        return "";
     }
 
 

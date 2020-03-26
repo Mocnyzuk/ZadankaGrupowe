@@ -79,4 +79,14 @@ class Zadania_A3_4Test {
         //then
         assertEquals("o", result);
     }
+
+    @Test
+    void seeColor() {
+        //given
+        String text = "blueTimes";
+        //when
+        String result = Zadania_A3_4.seeColor(text);
+        //then
+        assertEquals("blue",result);
+    }
 }
