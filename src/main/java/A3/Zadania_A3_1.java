@@ -10,14 +10,11 @@ public class Zadania_A3_1 {
     }
     //Warmup-1 > mixStart
     public static boolean mixStart(String str) {
-        String str1="";
+        String str1;
         if(str.length()>2)
         {
             str1 = str.substring(1,3);
-            if(str1.equals("ix"))
-            {
-                return true;
-            }
+            return str1.equals("ix");
         }
         return false;
 }
@@ -36,5 +33,26 @@ public class Zadania_A3_1 {
         }
         return 0;
     }
+
+    //Warmup-2 > stringTimes
+    public static String stringTimes(String str, int n) {
+        String r = "";
+        for(int i=0;i<n;i++)
+        {
+            r = r+str;
+        }
+        return r;
+    }
+
+    public static boolean doubleX(String str) {
+        int index = str.indexOf('x');
+        if(index == -1 || index+1>=str.length() )
+        {
+            return false;
+        }
+        String str1 = str.substring(index+1, index+2);
+        return str1.equals("x");
+    }
+
 
 }

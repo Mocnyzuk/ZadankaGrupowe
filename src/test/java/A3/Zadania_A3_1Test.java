@@ -42,5 +42,29 @@ class Zadania_A3_1Test {
         assertEquals(8,Zadania_A3_1.close10(a,b));
     }
 
+    @Test
+    void stringTimes()
+    {
+        //given
+        var str = "Hi";
+        var n = 2;
+        //when
+        Zadania_A3_1.stringTimes(str,n);
+        //then
+        assertEquals("HiHi", Zadania_A3_1.stringTimes(str,n));
+
+    }
+
+    @Test
+    void doubleX()
+    {
+        //given
+        var str = "axx";
+        //when
+        Zadania_A3_1.doubleX(str);
+        //then
+        assertTrue(Zadania_A3_1.doubleX(str));
+
+    }
 
 }
