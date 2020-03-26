@@ -12,4 +12,15 @@ public class Zadania_A3_4 {
     public static boolean hasTeen(int a, int b, int c){
         return (a>=13 && a<=19) || (b>=13 && b<=19) || (c>=13 && c<=19);
     }
+
+    //Warmup-1 > stringE
+    public static boolean stringE(String text){
+        int counter = 0;
+        for(int i = 0; i < text.length(); i++){
+            if(text.charAt(i) == 'e'){
+                counter++;
+            }
+        }
+        return counter >= 1 && counter <= 3;
+    }
 }

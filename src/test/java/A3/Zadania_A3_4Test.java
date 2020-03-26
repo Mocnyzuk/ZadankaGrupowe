@@ -27,4 +27,14 @@ class Zadania_A3_4Test {
         //then
         assertTrue(isHasTeen);
     }
+
+    @Test
+    void stringE() {
+        //given
+        String text = "Heelle";
+        //when
+        boolean result = Zadania_A3_4.stringE(text);
+        //then
+        assertTrue(result);
+    }
 }
