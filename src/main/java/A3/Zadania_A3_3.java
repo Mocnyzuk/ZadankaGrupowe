@@ -2,7 +2,7 @@ package A3;
 
 public class Zadania_A3_3 {
 
-    public static int n = 5;
+    public static int n;
     //Warmup-1 > diff21
 
 
@@ -15,9 +15,13 @@ public class Zadania_A3_3 {
     }
 
     //Warmup-1 > nearHundred
+
     public static boolean nearHundred(int n) {
         return ((Math.abs(100-n) <= 10)
                 ||
                 (Math.abs(200-n) <= 10));
     }
+
+    //last2
+    //array123
 }
