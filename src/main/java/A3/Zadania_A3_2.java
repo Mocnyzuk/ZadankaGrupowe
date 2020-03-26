@@ -1,5 +1,7 @@
 package A3;
 
+
+
 public class Zadania_A3_2 {
 
     //Warmup-1 > missingChar
@@ -24,4 +26,16 @@ public class Zadania_A3_2 {
         }
         return result;
     }
+
+    //Warmup-2 > noTriples
+    public static boolean noTriples(int[] nums){
+        for (int i = 1; i < nums.length - 1; i++) {
+            if (nums[i - 1] == nums[i] && nums[i] == nums[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
 }

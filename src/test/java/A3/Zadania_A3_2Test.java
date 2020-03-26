@@ -36,4 +36,16 @@ class Zadania_A3_2Test {
         // Then
         assertEquals("kien", Zadania_A3_2.altPairs(str));
     }
+
+    @Test
+    @DisplayName("noTriples([1, 1, 2, 2, 1]) → true")
+    void noTriples() {
+        // Given
+        int array1[] = {1, 1, 2, 2, 1};
+        int array2[] = {1, 1, 2, 2, 2, 1};
+        // When
+        // Then
+        assertTrue(Zadania_A3_2.noTriples(array1));
+        assertFalse(Zadania_A3_2.noTriples(array2));
+    }
 }
