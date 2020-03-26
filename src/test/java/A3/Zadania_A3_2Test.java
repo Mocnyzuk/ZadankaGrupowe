@@ -17,4 +17,13 @@ class Zadania_A3_2Test {
         assertEquals("ktten", Zadania_A3_2.missingChar("kitten",1));
     }
 
+    @Test
+    @DisplayName("backAround(\"cat\") → \"tcatt\"")
+    void backAround() {
+        // Given
+        String str = "cat";
+        // When
+        // Then
+        assertEquals("tcatt", backAround(str));
+    }
 }
