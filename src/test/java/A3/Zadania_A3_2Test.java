@@ -48,4 +48,16 @@ class Zadania_A3_2Test {
         assertTrue(Zadania_A3_2.noTriples(array1));
         assertFalse(Zadania_A3_2.noTriples(array2));
     }
+
+    @Test
+    @DisplayName("firstLast6([1, 2, 6]) → true")
+    void firstLast6() {
+        // Given
+        int array1[] = {1, 1, 2, 2, 1};
+        int array2[] = {1, 1, 2, 2, 2, 6};
+        // When
+        // Then
+        assertTrue(Zadania_A3_2.firstLast6(array2));
+        assertFalse(Zadania_A3_2.firstLast6(array1));
+    }
 }
