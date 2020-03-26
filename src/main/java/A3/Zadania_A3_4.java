@@ -40,11 +40,9 @@ public class Zadania_A3_4 {
 
     //String-1 > makeOutWord
     public static String makeOutWord(String out, String word){
-        StringBuilder result = new StringBuilder();
-        return result.append(out.substring(0, out.length()/2))
-                .append(word)
-                .append(out.substring(out.length()/2))
-                .toString();
+        return out.substring(0, out.length() / 2) +
+                word +
+                out.substring(out.length() / 2);
     }
 
     //String-1 > theEnd
@@ -63,6 +61,23 @@ public class Zadania_A3_4 {
             return "blue";
         }
         return "";
+    }
+
+    //String-1 > extraFront
+    public static String extraFront(String text){
+        String result = "";
+
+        if(text.length() >= 2){
+            for(int i = 0; i < 3; i++) {
+                result = result.concat(text.substring(0, 2));
+            }
+        }else {
+            for(int i = 0; i < 3; i++) {
+                result = result.concat(text);
+            }
+        }
+
+        return result;
     }
 
 

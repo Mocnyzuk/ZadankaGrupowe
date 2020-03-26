@@ -89,4 +89,14 @@ class Zadania_A3_4Test {
         //then
         assertEquals("blue",result);
     }
+
+    @Test
+    void extraFront() {
+        //given
+        String text = "ab";
+        //when
+        String result = Zadania_A3_4.extraFront(text);
+        //then
+        assertEquals("ababab", result);
+    }
 }
