@@ -73,4 +73,18 @@ class Zadania_A3_2Test {
         assertTrue(Zadania_A3_2.commonEnd(array1, array2));
         assertFalse(Zadania_A3_2.commonEnd(array1, array3));
     }
+
+    @Test
+    @DisplayName("unlucky1([1, 3, 4, 5]) → true")
+    void unlucky1() {
+        // Given
+        int array1[] = {1, 3, 2, 2, 1};
+        int array2[] = {1, 1, 2, 2, 1, 3};
+        int array3[] = {7, 1, 2, 2, 2, 7};
+        // When
+        // Then
+        assertTrue(Zadania_A3_2.unlucky1(array1));
+        assertTrue(Zadania_A3_2.unlucky1(array2));
+        assertFalse(Zadania_A3_2.unlucky1(array3));
+    }
 }
