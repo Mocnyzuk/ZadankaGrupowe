@@ -44,6 +44,7 @@ public class Zadania_A3_1 {
         return r;
     }
 
+    //Warmup-2 > doubleX
     public static boolean doubleX(String str) {
         int index = str.indexOf('x');
         if(index == -1 || index+1>=str.length() )
@@ -53,6 +54,16 @@ public class Zadania_A3_1 {
         String str1 = str.substring(index+1, index+2);
         return str1.equals("x");
     }
+    //String-1 > firstHalf
+    public static String firstHalf(String str) {
+        return str.substring(0,str.length()/2);
+    }
+
+    //String-1 > nonStart
+    public static String nonStart(String a, String b) {
+        return a.substring(1)+b.substring(1);
+    }
+
 
 
 }

@@ -67,4 +67,28 @@ class Zadania_A3_1Test {
 
     }
 
+    @Test
+    void firstHalf()
+    {
+        //given
+        var str ="WooHoo";
+        //when
+        Zadania_A3_1.firstHalf(str);
+        //then
+        assertEquals("Woo", Zadania_A3_1.firstHalf(str));
+    }
+
+    @Test
+    void nonStart()
+    {
+        //given
+        var a = "Hello";
+        var b = "There";
+        //when
+        Zadania_A3_1.nonStart(a,b);
+        //then
+        assertEquals("ellohere",Zadania_A3_1.nonStart(a,b));
+    }
+
+
 }
