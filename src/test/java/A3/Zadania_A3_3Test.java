@@ -39,4 +39,17 @@ class Zadania_A3_3Test {
         //then
         assertEquals(expectedValue, returnedValue);
     }
+
+
+
+   @Test
+    void array123() {
+       //given
+       boolean expectedValue = true;
+       int[] nums= {1,2,3,1,2,3};
+       //when
+       boolean returnedValue = Zadania_A3_3.array123(nums);
+       //then
+       assertEquals(expectedValue, returnedValue);
+    }
 }

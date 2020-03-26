@@ -40,8 +40,15 @@ public class Zadania_A3_3 {
     public static boolean array123(int[] nums) {
 
         for (int i=0; i < (nums.length-2); i++) {
-            if (nums[i]==1 && nums[i+1]==2 && nums[i+2]==3) return true;
+            if (nums[i]==1)
+                if(nums[i+1]==2)
+                    if (nums[i+2]==3)
+                     return true;
         }
         return false;
     }
+
+    //String-1 > startWord
+    //Array-1 > reverse3
+    //Array-1 > middleWay
 }
