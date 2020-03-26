@@ -24,6 +24,6 @@ class Zadania_A3_2Test {
         String str = "cat";
         // When
         // Then
-        assertEquals("tcatt", backAround(str));
+        assertEquals("tcatt", Zadania_A3_2.backAround(str));
     }
 }

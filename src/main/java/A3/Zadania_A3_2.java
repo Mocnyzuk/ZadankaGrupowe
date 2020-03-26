@@ -8,7 +8,7 @@ public class Zadania_A3_2 {
     }
 
     public static String backAround(String str) {
-        return "";
+        return str.charAt(str.length() - 1) + str + str.charAt(str.length() - 1);
     }
 
 }
