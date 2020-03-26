@@ -58,4 +58,15 @@ class Zadania_A3_4Test {
         //then
         assertEquals("Hello Patryk", result);
     }
+
+    @Test
+    void makeOutWord() {
+        //given
+        String out = "<<>>";
+        String text = "WooHoo";
+        //when
+        String result = Zadania_A3_4.makeOutWord(out, text);
+        //then
+        assertEquals("<<WooHoo>>", result);
+    }
 }

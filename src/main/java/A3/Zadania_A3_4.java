@@ -38,5 +38,14 @@ public class Zadania_A3_4 {
         return "Hello ".concat(name);
     }
 
+    //String-1 > makeOutWord
+    public static String makeOutWord(String out, String word){
+        StringBuilder result = new StringBuilder();
+        return result.append(out.substring(0, out.length()/2))
+                .append(word)
+                .append(out.substring(out.length()/2, out.length()))
+                .toString();
+}
+
 
 }
