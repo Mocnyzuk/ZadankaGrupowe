@@ -58,5 +58,17 @@ public class Zadania_A3_3 {
         return "";
     }
     //Array-1 > reverse3
+    public static int[] reverse3(int[] nums) {
+        int[] reversed = {nums[2], nums[1], nums[0]};
+        return reversed;
+
+    }
     //Array-1 > middleWay
+    public static int[] middleWay(int[] a, int[] b) {
+int[] middleWay = {a[1],b[1]};
+return middleWay;
+    }
+
+    //Array-1 > makeMiddle
+    //Array-1 > midThree
 }

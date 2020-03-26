@@ -41,27 +41,38 @@ class Zadania_A3_3Test {
     }
 
 
-
-   @Test
+    @Test
     void array123() {
-       //given
-       boolean expectedValue = true;
-       int[] nums= {1,2,3,1,2,3};
-       //when
-       boolean returnedValue = Zadania_A3_3.array123(nums);
-       //then
-       assertEquals(expectedValue, returnedValue);
+        //given
+        boolean expectedValue = true;
+        int[] nums = {1, 2, 3, 1, 2, 3};
+        //when
+        boolean returnedValue = Zadania_A3_3.array123(nums);
+        //then
+        assertEquals(expectedValue, returnedValue);
     }
 
     @Test
     void startWord() {
         //given
         String expectedValue = "hip";
-        String str="hippo";
+        String str = "hippo";
         String word = "xip";
-              //when
-        String returnedValue = Zadania_A3_3.startWord(str,word);
+        //when
+        String returnedValue = Zadania_A3_3.startWord(str, word);
         //then
         assertEquals(expectedValue, returnedValue);
+    }
+
+    @Test
+    void middleWay() {
+        //given
+        int[] a = {1, 2, 3};
+        int[] b = {4, 5, 6};
+        int[] expectedValue = {2, 5};
+        //when
+        int[] returnedValue = Zadania_A3_3.middleWay(a, b);
+        //then
+        assertArrayEquals(expectedValue, returnedValue);
     }
 }
