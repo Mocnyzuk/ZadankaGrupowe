@@ -60,4 +60,17 @@ class Zadania_A3_2Test {
         assertTrue(Zadania_A3_2.firstLast6(array2));
         assertFalse(Zadania_A3_2.firstLast6(array1));
     }
+
+    @Test
+    @DisplayName("commonEnd([1, 2, 3], [7, 3]) → true")
+    void commonEnd() {
+        // Given
+        int array1[] = {1, 1, 2, 2, 1};
+        int array2[] = {1, 1, 2, 2, 2, 6};
+        int array3[] = {7, 1, 2, 2, 2, 7};
+        // When
+        // Then
+        assertTrue(Zadania_A3_2.commonEnd(array1, array2));
+        assertFalse(Zadania_A3_2.commonEnd(array1, array3));
+    }
 }
