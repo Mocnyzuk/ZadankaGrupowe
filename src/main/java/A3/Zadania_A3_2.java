@@ -12,7 +12,7 @@ public class Zadania_A3_2 {
         return str.charAt(str.length() - 1) + str + str.charAt(str.length() - 1);
     }
 
-    //Warmup-2 >
+    //Warmup-2 > altPairs
     public static String altPairs(String str) {
         String result = "";
         for (int i = 0; i < str.length(); i += 4) {

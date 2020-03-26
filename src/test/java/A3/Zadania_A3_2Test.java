@@ -26,4 +26,14 @@ class Zadania_A3_2Test {
         // Then
         assertEquals("tcatt", Zadania_A3_2.backAround(str));
     }
+
+    @Test
+    @DisplayName("altPairs(\"kitten\") → \"kien\"")
+    void altPairs() {
+        // Given
+        String str = "kitten";
+        // When
+        // Then
+        assertEquals("kien", Zadania_A3_2.altPairs(str));
+    }
 }
