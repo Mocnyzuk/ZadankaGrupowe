@@ -6,7 +6,7 @@ public class Zadania_A3_3 {
     //Warmup-1 > diff21
 
 
-    public int diff21(int n) {
+    public static int diff21(int n) {
         if (n <= 21) {
             return 21 - n;
         } else {
@@ -15,7 +15,7 @@ public class Zadania_A3_3 {
     }
 
     //Warmup-1 > nearHundred
-    public boolean nearHundred(int n) {
+    public static boolean nearHundred(int n) {
         return ((Math.abs(100-n) <= 10)
                 ||
                 (Math.abs(200-n) <= 10));
